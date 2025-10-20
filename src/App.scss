@@ -1,0 +1,42 @@
+@import "./globalColor";
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: $appHeaderBG;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: $textColorDark;
+}
+
+.App-link {
+  color: $appLink;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* kill excess space at the end of the page */
+.main:last-of-type { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+/* don't force full-viewport height on generic wrappers */
+.main { min-height: auto !important; }
+
+/* footer shouldn't reserve vertical space */
+footer, .footer-div { min-height: auto !important; margin-bottom: 0 !important; padding-bottom: 24px !important; }
+
+/* ensure page itself isn't forcing extra height */
+html, body, #root { height: auto !important; min-height: 100% !important; margin: 0; padding: 0; }

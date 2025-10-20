@@ -1,0 +1,38 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}
+
+.light-mode {
+  background-color: $lightBackground1;
+  color: black;
+  transition: "0.1s";
+}
+
+/* Paint the whole page */
+html, body, #root { 
+  background: $lightBackground1 !important; 
+}
+
+/* Light mode: sections inherit the page bg so the gap blends in */
+.main, #githubprojects, .footer-div { 
+  background: inherit !important; 
+}
+
+/* Dark mode wrapper already exists on your app root */
+.dark-mode { 
+  background: $darkBackground !important; 
+}
+.dark-mode .main,
+.dark-mode #githubprojects,
+.dark-mode .footer-div {
+  background: inherit !important;
+}
+
+/* React-Reveal sometimes leaves a tall wrapper; let it blend too */
+.react-reveal { 
+  background: inherit !important; 
+}
