@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Fade } from "react-reveal";
-import emoji from "react-easy-emoji";
+// import emoji from "react-easy-emoji";
 
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";

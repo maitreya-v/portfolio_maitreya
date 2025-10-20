@@ -8,8 +8,8 @@ import {
   workExperiences,
   skillsSection,
   openSource,
-  blogSection,
-  talkSection,
+  // blogSection,
+  // talkSection,
   achievementSection,
   bigProjects
 } from "../../portfolio";
